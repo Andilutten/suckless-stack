@@ -1,4 +1,12 @@
 #!/bin/bash
 
+SUB_DIRS=(dwm st dmenu slstatus)
+ROOT_DIR=$(pwd)
+
+for dir in ${SUB_DIRS[@]}; do
+	cd $ROOT_DIR/$dir && make PREFIX=$HOME/.local install
+done
+
+cd $ROOT_DIR
 ln -s $PWD/dwm_run $HOME/.local/bin/dwm_run
 sudo ln -s $PWD/dwm.desktop /usr/share/xsessions/dwm.desktop
