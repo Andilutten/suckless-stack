@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ln -s $PWD/dwm_run $HOME/.local/bin/dwm_run
+sudo ln -s $PWD/dwm.desktop /usr/share/xsessions/dwm.desktop
