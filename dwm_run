@@ -1,9 +1,7 @@
 #!/bin/bash
 
-$HOME/.local/bin/slstatus &
-
-pgrep picom > /dev/null && picom &
-pgrep mopidy > /dev/null && mopidy &
+slstatus &
+mopidy &
 
 nitrogen --restore
 setxkbmap us colemak -option ctrl:nocaps

@@ -5,7 +5,7 @@ static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 0;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Ubuntu Mono:style=Bold:size=14" };
+static const char *fonts[]          = { "CaskaydiaCove Nerd Font Mono:style=Bold:size=12" };
 
 static const char col_bg[]			= "#e6e6e6";
 static const char col_fg[] 			= "#5E6C76";
@@ -39,8 +39,8 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 static const Layout layouts[] = {
 	/* first entry is default */	
 	/* symbol     arrange function */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[]=",      tile },    
+	{ "float",    NULL },    /* no layout function means floating behavior */
+	{ "tile",     tile },    
 	{ "[M]",      monocle },
 };
 
@@ -74,8 +74,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
