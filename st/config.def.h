@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "CaskaydiaCove Nerd Font Mono:style=Bold:pixelsize=14:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:style=Medium:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 10;
 
 /*
