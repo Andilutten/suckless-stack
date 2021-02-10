@@ -1,11 +1,14 @@
 /* See LICENSE file for copyright and license details. */
 
+#include "../colors.h"
+#include "../fonts.h"
+
 /*
  * appearance
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:style=Medium:pixelsize=14:antialias=true:autohint=true";
+static char *font = FONT_TERMINAL;
 static int borderpx = 10;
 
 /*
@@ -96,30 +99,30 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
-	"#0b141a",
-	"#ff4053",
-	"#11ab00",
-	"#bf8c00",
-	"#0099ff",
-	"#9854ff",
-	"#00a5ab",
-	"#ffffff",
+	BLACK,	 	
+	RED,	 		
+	GREEN,	 	
+	YELLOW,	 	
+	BLUE,	 	
+	MAGENTA,	 	
+	CYAN,		
+	WHITE,	 	
 
-	"#0b141a",
-	"#ff4053",
-	"#11ab00",
-	"#bf8c00",
-	"#0099ff",
-	"#9854ff",
-	"#00a5ab",
-	"#ffffff",
+	DIM_BLACK,	
+	DIM_RED,	 	
+	DIM_GREEN,	
+	DIM_YELLOW,	
+	DIM_BLUE,	
+	DIM_MAGENTA,	
+	DIM_CYAN,	
+	DIM_WHITE,	
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"#5E6C76",
+	FOREGROUND,
 };
 
 

@@ -1,15 +1,18 @@
 /* See LICENSE file for copyright and license details. */
 
+#include "../fonts.h"
+#include "../colors.h"
+
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int snap      = 0;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrains Mono:style=Medium:size=14" };
+static const char *fonts[]          = { FONT_SYSTEM };
 
-static const char col_bg[]			= "#e6e6e6";
-static const char col_fg[] 			= "#5E6C76";
-static const char col_sl[]			= "#fd6aa7";
+static const char col_bg[]			= BACKGROUND;
+static const char col_fg[] 			= FOREGROUND;
+static const char col_sl[]			= SELECTION;
 
 static const char *colors[][3]      = {
 	/*               fg      bg      border   */
