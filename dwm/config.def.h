@@ -21,7 +21,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "" };
+static const char *tags[] = { "dev", "www", "usr", "etc" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -42,8 +42,8 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 static const Layout layouts[] = {
 	/* first entry is default */	
 	/* symbol     arrange function */
-	{ "float",    NULL },    /* no layout function means floating behavior */
-	{ "tile",     tile },    
+	{ "[float]",    NULL },    /* no layout function means floating behavior */
+	{ "[tile]",     tile },    
 	{ "[M]",      monocle },
 };
 

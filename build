@@ -5,5 +5,5 @@ DIRS=(dwm st dmenu slstatus)
 
 rm $(find . -name config.h)
 for dir in ${DIRS[@]}; do
-	bash -c "cd $dir && make install"
+	bash -c "cd $dir && make PREFIX=$PREFIX install"
 done
