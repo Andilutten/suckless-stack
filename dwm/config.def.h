@@ -4,7 +4,7 @@
 #include "../colors.h"
 
 /* appearance */
-static const unsigned int borderpx  = 2;        /* border pixel of windows */
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int snap      = 0;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -29,7 +29,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      		instance    title       tags mask     iscentered   isfloating   monitor */
-	{ "st-256color", 	NULL, 	  	NULL, 	 	0, 			  1,			1, 			  -1 },
+	{ "st-256color", 	NULL, 	  	NULL, 	 	0, 			  1,			0, 			  -1 },
 	{ "Gimp",     		NULL,     	NULL,       0,            0,           1,           -1 },
 	{ "Firefox",  		NULL,       NULL,       1 << 8,       0,           0,           -1 },
 };

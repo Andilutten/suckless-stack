@@ -65,8 +65,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ ram_used, "[%s/", 			NULL},
-	{ ram_total, "%s] ",			NULL },
-	{ keymap, 	"[%s] ", 			NULL},
+	{ run_command, "%s ", 		"playerctl metadata --format '[{{artist}} - {{title}}]'" },
+	{ ram_used, "[%s/", 		NULL },
+	{ ram_total, "%s] ",		NULL },
+	{ keymap, 	"[%s] ", 		NULL },
 	{ datetime, "%s",           "%F %T" },
 };
